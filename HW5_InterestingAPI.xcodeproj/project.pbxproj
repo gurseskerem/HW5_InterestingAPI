@@ -16,7 +16,7 @@
 		578E8FA426022A960064EDD4 /* HW5_InterestingAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E8FA326022A960064EDD4 /* HW5_InterestingAPITests.swift */; };
 		578E8FAF26022A960064EDD4 /* HW5_InterestingAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E8FAE26022A960064EDD4 /* HW5_InterestingAPIUITests.swift */; };
 		57CBC63E2604BE460095E004 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBC63D2604BE460095E004 /* ARModel.swift */; };
-		57CBC6482604CE700095E004 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57CBC6472604CE6F0095E004 /* toy_biplane.usdz */; };
+		57CBC656260600FC0095E004 /* Pizza.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 57CBC655260600FC0095E004 /* Pizza.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		578E8FAE26022A960064EDD4 /* HW5_InterestingAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW5_InterestingAPIUITests.swift; sourceTree = "<group>"; };
 		578E8FB026022A960064EDD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CBC63D2604BE460095E004 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
-		57CBC6472604CE6F0095E004 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		57CBC655260600FC0095E004 /* Pizza.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pizza.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				578E8F9526022A950064EDD4 /* Assets.xcassets */,
 				578E8F9726022A950064EDD4 /* LaunchScreen.storyboard */,
 				578E8F9A26022A950064EDD4 /* Info.plist */,
-				57CBC6472604CE6F0095E004 /* toy_biplane.usdz */,
+				57CBC655260600FC0095E004 /* Pizza.usdz */,
 			);
 			path = HW5_InterestingAPI;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57CBC6482604CE700095E004 /* toy_biplane.usdz in Resources */,
+				57CBC656260600FC0095E004 /* Pizza.usdz in Resources */,
 				578E8F9926022A950064EDD4 /* LaunchScreen.storyboard in Resources */,
 				578E8F9626022A950064EDD4 /* Assets.xcassets in Resources */,
 				578E8F9426022A920064EDD4 /* Main.storyboard in Resources */,

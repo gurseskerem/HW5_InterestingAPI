@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var myButton: UIButton!
+    
+    
+    
     
     var counter:Int = 0 {
         didSet {
@@ -32,13 +36,13 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
-        addObject()
+        //addObject()
         
     }
     func addObject() {
         let imposter = ARModel()
         imposter.loadModal()
-        imposter.scale = SCNVector3(0.09,0.09,0.09)
+        imposter.scale = SCNVector3(0.3,0.3,0.3)
         let xPos = randomPosition(lowerBound: -1.5, upperBound: 1.5)
         let yPos = randomPosition(lowerBound: -1.5, upperBound: 1.5)
         imposter.position = SCNVector3(xPos, yPos, -5)
@@ -49,22 +53,12 @@ class ViewController: UIViewController {
         return Float(arc4random()) / Float(UInt32.max) * (lower - upper) + upper
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first{
-            let location = touch.location(in: sceneView)
-            let hitList = sceneView.hitTest(location, options: nil)
-            
-            if let hitObject = hitList.first{
-                let node=hitObject.node
-                if node.name == "ARModel" {
-                    counter += 1
-                    node.removeFromParentNode()
-                    addObject()
-                }
-            }
-        }
-
+    @IBAction func buttonClicked(_ sender: Any) {
+        //let configuration = ARWorldTrackingConfiguration()
+        //sceneView.session.run(configuration)
+        
     }
+    
     
     
     override func didReceiveMemoryWarning() {

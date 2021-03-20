@@ -10,7 +10,7 @@ import ARKit
 class ARModel: SCNNode {
     
     func loadModal() {
-        guard let virtualObjectScene = SCNScene(named: "toy_biplane.usdz") else {return}
+        guard let virtualObjectScene = SCNScene(named: "Pizza.usdz") else {return}
         let wrapperNode = SCNNode()
         for child in virtualObjectScene.rootNode.childNodes {
             wrapperNode.addChildNode(child)
